@@ -1,0 +1,28 @@
+<div class="shadow mb-5 rounded">
+    <a class="list-group-item list-group-item-action bg-dark text-white">
+
+      <h5 class="active">The most discussed</h5>
+  </a>
+  <div class="row">
+    <div class="col-12">
+        <div class="list-group mb-0">
+      
+            <a href="#" 
+            *ngFor="let item of news"
+            [routerLink]="['/discussed/detail',item.Id_news]"
+            routerLinkActive="active"
+            class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1 mr-1"><strong>{{item.Title}}</strong> </h5>
+                <small class="text-muted">{{item.DateAdded | date : format : mediumDate}}</small>
+              </div>
+              <p class="mb-1 text-style">{{item.Description}}</p>
+              <h4><span class="badge badge-primary float-right"><i class="far fa-comment-alt mr-2"></i>{{item.Comments.length}}</span></h4>
+            
+            </a>
+          </div>
+    </div>
+  </div>
+</div>
+
+ 

@@ -1,0 +1,19 @@
+.fas {
+    color: #098bf7;
+    
+}
+.active .fas{
+    color: #ffffff;
+}
+
+.fab {
+    color: #098bf7;
+    
+}
+.active .fab{
+    color: #ffffff;
+}
+
+.list-group-item.list-group-item-action h5{
+    font-family: 'Abril Fatface', cursive;
+}

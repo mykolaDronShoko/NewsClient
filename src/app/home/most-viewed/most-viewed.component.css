@@ -1,0 +1,30 @@
+.card {
+     overflow: hidden;  
+   
+ 
+    
+}
+.media .media-body p{
+
+
+    max-height: 6rem; 
+   overflow: hidden;
+    
+    text-overflow: ellipsis; 
+    
+}
+.card-img{
+    height: 74px; 
+    max-width: 74px; 
+    overflow: hidden; 
+    min-width: 74px;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.alert.alert-secondary{
+    font-family: 'Vollkorn', serif;
+}

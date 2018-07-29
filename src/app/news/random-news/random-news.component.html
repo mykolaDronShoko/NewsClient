@@ -1,0 +1,17 @@
+          <div class="my-3 shadow p-3 mb-5 bg-white rounded" style="overflow: hidden;">
+                <h6 class="border-bottom border-gray pb-2 mb-0">Maybe it will interest you</h6>
+                <div class="media text-muted pt-3" *ngFor="let item of news">
+                  <span style="overflow: hidden; height: 42px;min-width: 42px; width: 42px" class="mr-4 rounded-circle">
+                      <img class="mr-5"  style="height: 42px;" src="{{item.Images[0].Img_Url}}" data-holder-rendered="true">
+                  </span>
+                 
+                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <strong class="d-block text-gray-dark" style="overflow: hidden;">
+                      <a                    
+                      [routerLink]="['/interest/detail',item.Id_news]"
+                      routerLinkActive="active" style="cursor: pointer; text-decoration: none; overflow: hidden;"                   
+                      ><h6>{{item.Title}}</h6></a></strong>
+                  </p>
+                </div>               
+                
+              </div>

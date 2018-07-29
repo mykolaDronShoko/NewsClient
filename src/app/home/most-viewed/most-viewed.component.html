@@ -1,0 +1,41 @@
+
+ <div class="row">
+    <div class="col-12" >
+        <div class="alert alert-secondary" role="alert">
+           <strong>Most viewed</strong> 
+          </div>
+        </div>
+        <div  *ngFor="let item of news" class="col-lg-6 col-md-12">
+            <a
+            [routerLink]="['/most/detail',item.Id_news]"
+             class="" >
+               <div class="card border-dark mb-5 shadow bg-white rounded">
+                   <div class="card-header bg-dark text-white">{{item.Title}}</div>
+                   <div class="card-body text-dark">
+                       <div class="media">
+                           <span class="card-img rounded-circle mr-3 ">
+                               <img class="" src="{{item.Images[0].Img_Url}}" style="height:74px;">
+                           </span>
+                           <div class="media-body">
+                            
+                             <p>{{item.Description}}</p>
+                           </div>
+                         </div>
+                   </div>
+                   <div class="card-footer">
+                     <span class="float-right">{{item.DateAdded | date : format : mediumDate}}</span> 
+                   <h4><span class="badge badge-primary">
+                     <i class="far fa-eye mr-2"></i>{{item.NumberViews}}
+                   </span></h4>
+                 </div>
+                 </div>
+         
+            </a>
+        </div>
+  
+
+   
+
+ </div>
+
+

@@ -1,0 +1,5 @@
+
+.shadow:hover{
+    transition: 1s;
+    transform: rotateY(15deg);
+}

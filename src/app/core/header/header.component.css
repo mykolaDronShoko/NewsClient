@@ -1,0 +1,23 @@
+.navbar-brand{
+  line-height: 1.2;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-family: 'Vollkorn', serif;
+  font-size: 20px;
+}
+
+.userImg{
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+}
+
+.navbar-brand{
+  text-shadow: 5px 5px 5px rgb(77, 140, 199); 
+  color: rgb(255, 255, 255); 
+  font-family: 'Abril Fatface', cursive; 
+  font-size: 2rem;
+  padding-top: 0;
+  padding-bottom: 0.4rem;
+}

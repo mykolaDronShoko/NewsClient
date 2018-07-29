@@ -1,0 +1,19 @@
+.carousel-caption {
+    /* background-color: #c0c0c0;  */
+    opacity: 0.9;
+   /* border-radius: 2rem; */
+}
+.carousel-caption h5{
+    color: #000000 !important;
+}
+.carousel-caption a{
+    text-decoration: none;
+}
+.carousel-caption h5:hover{
+    
+    opacity: 0.5;
+}
+
+.alert.alert-secondary{
+    font-family: 'Vollkorn', serif
+}

@@ -1,0 +1,10 @@
+.text-style{
+    max-height: 5rem; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+.list-group-item.list-group-item-action .active{
+    font-family: 'Abril Fatface', cursive;
+}
